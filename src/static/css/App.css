@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App .Routes {
+  left: -450px;
+  position: relative;
+  margin-top: 50px;
+}
+.App .Routes ul li {
+  display: inline-block;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.App .Routes ul li .NavLink {
+  text-decoration: none;
+  color: black;
+}
+.App .Routes ul li .NavLink:active {
+  border-bottom: none;
+  font-weight: bold;
+}
+.App .Routes ul li .element {
+  left: 20px;
+  position: relative;
+}
+.App .create {
+  top: 50px;
+  right: 30px;
+  position: absolute;
+  padding: 0px 14px;
+  border-radius: 10px;
+  background-color: limegreen;
+  color: white;
+}
+.App .create .element {
+  display: inline-block;
+}
+.App .create .element:first-child {
+  margin-right: 10px;
+}
